@@ -1,30 +1,8 @@
-<img 
-  src={{asset-map (concat "images/team/" image)}}
-  alt={{name}}
-  class="img-fluid"
-  style="width: 100%" 
->
-<div class="team-member-name">
+<img src={{asset-map (concat "images/team/" image)}} alt={{name}} class="img-fluid">
+<div class="small margin-top-xsmall">
   {{name}}
 </div>
-
-<ul class="team-member-social">
-  <li>
-    <a
-      aria-label="{{name}} Twitter"
-      class="team-member-twitter"
-      href={{twitter}}
-    >
-      <i class="icon-twitter" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a
-      aria-label="{{name}} Github Profile"
-      class="team-member-github"
-      href={{github}}
-    >
-      <i class="icon-github" aria-hidden="true"></i>
-    </a>
-  </li>
-</ul>
+<div>
+  <a aria-label="{{name}} Github Profile" class="icon team-member-github" href={{github}}>{{svg-jar "github"}}</a>
+  <a aria-label="{{name}} Twitter" class="icon team-member-twitter" href={{twitter}}>{{svg-jar "twitter"}}</a>
+</div>
